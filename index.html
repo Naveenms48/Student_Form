@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>STUDENT FORM</h1>
+    <table id="table1">
+        <form id="form">
+            <tr>
+                <td>Name</td>
+                <td><input type="text" id="name" required></td>
+            </tr>
+            <tr>
+                <td>Age</td>
+                <td><input type="number" id="age" required></td>
+            </tr>
+            <tr>
+                <td>Gender</td>
+                <td><input type="radio" name="gender" value="Male" required>Male
+                    <input type="radio" name="gender" value="Female" required>Female    
+                </td>
+
+            </tr>
+            <tr>
+                <td>Course</td>
+                <td><select id="course" required>
+                    <option value="HTML">HTML</option>
+                    <option value="CSS">CSS</option>
+                    <option value="JAVASCRIPT">JAVASCRIPT</option>
+                </select></td>
+            </tr>
+            <tr>
+                <td>Email</td>
+                <td><input type="email" id="email" required></td>
+            </tr>
+
+            <tr>
+            <td><button id="btn" type="submit">Submit</button></td>
+            </tr>
+        </form>
+    </table>
+    <table id="studentTable">
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Gender</th>
+            <th>Course</th>
+            <th>Email</th>
+            <th>Action</th>
+        </tr>
+    </table>
+
+    <script src="script.js"></script>
+</body>
+</html>
